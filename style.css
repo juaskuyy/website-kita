@@ -59,7 +59,7 @@ footer{position:relative;z-index:1;text-align:center;color:#62586a;font-size:10p
   /* Match the reference: image and caption sit beside each other on mobile. */
   .story-grid.single-photo{grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:12px;align-items:center}
   .story-grid.single-photo .story-photo{min-height:175px}
-  .story-grid.single-photo .chat-photo img{width:100%;height:auto;aspect-ratio:auto;object-fit:contain;padding:5px;display:block}
+  .story-grid.single-photo .chat-photo img{aspect-ratio:3/4;object-fit:contain;padding:5px}
   .story-copy h3{font-size:27px;line-height:1;margin-bottom:10px}
   .story-copy p{font-size:10.5px;line-height:1.6;margin-bottom:10px}
   .story-copy .caption{font-size:9px;line-height:1.35}
@@ -96,19 +96,21 @@ footer{position:relative;z-index:1;text-align:center;color:#62586a;font-size:10p
 }
 
 
-/* FINAL MOBILE FIX — full 28 Aug chat screenshot */
-@media(max-width:700px){
-  .story-chat .chat-photo{
-    min-height:0;
-    height:auto;
-  }
-  .story-chat .chat-photo img{
-    width:100%;
-    height:auto;
-    max-height:none;
-    aspect-ratio:auto;
-    object-fit:contain;
-    padding:5px;
-    display:block;
-  }
+/* Final signature */
+.final-signature{
+  width:min(900px,88vw);
+  margin:0 auto;
+  padding:34px 20px 48px;
+  text-align:center;
+  color:#f2d7ec;
+  font:italic 18px "Cormorant Garamond",serif;
+  letter-spacing:.08em;
+  text-shadow:0 0 22px #ff7fd966;
+}
+.final-signature span{
+  font-style:normal;
+  margin-right:6px;
+}
+@media(max-width:600px){
+  .final-signature{font-size:16px;padding:28px 16px 38px;letter-spacing:.06em}
 }
