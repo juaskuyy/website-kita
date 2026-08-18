@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#100b16">
+  <title>Untuk Kamu ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="stars"></div>
+  <div class="grain"></div>
+
+  <button class="sound" id="soundBtn" aria-label="Musik">♫</button>
+
+  <section class="screen hero">
+    <div class="orb orb-a"></div><div class="orb orb-b"></div>
+    <div class="hero-inner reveal">
+      <div class="tiny">A LITTLE GIFT FOR YOU</div>
+      <div class="heart">♥</div>
+      <h1>Untuk <span data-name="partner">Nama Pasangan</span></h1>
+      <p class="lead">Sebuah halaman kecil berisi cerita, foto, dan hal-hal sederhana yang ingin aku simpan.</p>
+      <button class="pill" data-go="#welcome">Buka Cerita <b>↓</b></button>
+    </div>
+    <div class="swipe">SCROLL UNTUK MEMULAI <span>⌄</span></div>
+  </section>
+
+  <section class="screen welcome" id="welcome">
+    <div class="copy reveal">
+      <div class="tiny">FOR YOU, <span data-name="partner">NAMA</span></div>
+      <h2>Aku membuat<br>ini khusus untuk <em>kamu.</em></h2>
+      <p>Karena beberapa perasaan terlalu indah kalau cuma disimpan di kepala. Jadi, aku taruh sedikit di sini.</p>
+    </div>
+    <div class="date-card reveal">
+      <span>OUR STORY STARTED</span>
+      <strong data-start="date">28 AGUSTUS 2025</strong>
+      <small>dimulai dari sebuah chat, lalu menjadi cerita kita ♡</small>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-title reveal">
+      <div class="tiny">A FEW MEMORIES</div>
+      <h2>Potongan kecil<br>dari <em>cerita kita.</em></h2>
+    </div>
+
+    <div class="polaroids">
+      <figure class="polaroid p1 reveal"><img src="assets/foto/chat-28-agustus.jpg" onerror="this.src='assets/foto/placeholder.svg'"><figcaption>28 Agustus 2025 · awal chat kita ♡</figcaption></figure>
+      <figure class="polaroid p2 reveal"><img src="assets/foto/ketemu1.jpg" onerror="this.src='assets/foto/placeholder.svg'"><figcaption>15 Agustus 2026 · pertama ketemu</figcaption></figure>
+      <figure class="polaroid p3 reveal"><img src="assets/foto/ketemu2.jpg" onerror="this.src='assets/foto/placeholder.svg'"><figcaption>hari pertama kita bersama</figcaption></figure>
+    </div>
+
+    <div class="memory-extra">
+      <figure class="memory-photo reveal"><img src="assets/foto/ketemu3.jpg" onerror="this.src='assets/foto/placeholder.svg'"><figcaption>15 AGUSTUS 2026 · FIRST MEETING ♡</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="section music-section">
+    <div class="section-title reveal">
+      <div class="tiny">OUR SOUNDTRACK</div>
+      <h2>Lagu yang mengingatkanku<br>pada <em>kamu.</em> ♫</h2>
+    </div>
+    <div class="player reveal">
+      <div class="album"><span>♡</span></div>
+      <div class="track">
+        <div class="now">NOW PLAYING</div>
+        <h3 id="songTitle">Lagu Kita</h3>
+        <p id="artist">Nama Penyanyi</p>
+        <div class="bar"><i id="progress"></i></div>
+        <div class="times"><span id="current">0:00</span><span id="duration">0:00</span></div>
+      </div>
+      <button class="play" id="play">▶</button>
+    </div>
+    <p class="music-note reveal">Musik mulai setelah kamu menekan tombol play, karena browser biasanya memblokir autoplay.</p>
+  </section>
+
+  <section class="section timeline-section">
+    <div class="section-title reveal">
+      <div class="tiny">MEMORY LANE</div>
+      <h2>Tanggal-tanggal<br>yang <em>berarti.</em></h2>
+    </div>
+    <div class="timeline">
+      <article class="event reveal">
+        <div class="dot"></div>
+        <time data-event-date="1">01 JANUARI 2025</time>
+        <h3>Awal dari semuanya.</h3>
+        <p data-event-text="1">Di hari ini, cerita kita dimulai. Mungkin sederhana, tapi sekarang menjadi salah satu tanggal yang paling aku ingat.</p>
+      </article>
+      <article class="event reveal">
+        <div class="dot"></div>
+        <time data-event-date="2">14 FEBRUARI 2025</time>
+        <h3>Satu momen kecil.</h3>
+        <p data-event-text="2">Tidak harus mewah. Waktu, obrolan, dan senyum kamu sudah cukup untuk membuat hari biasa terasa berbeda.</p>
+      </article>
+      <article class="event reveal">
+        <div class="dot"></div>
+        <time data-event-date="3">20 MEI 2025</time>
+        <h3>Hari yang ingin diulang.</h3>
+        <p data-event-text="3">Kalau waktu bisa diputar kembali, mungkin aku akan memilih hari ini sekali lagi.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section feature">
+    <div class="feature-card reveal">
+      <div class="feature-photo"><img src="assets/foto/ketemu1.jpg" onerror="this.src='assets/foto/placeholder.svg'"></div>
+      <div class="feature-copy">
+        <div class="tiny">MY FAVORITE MEMORY</div>
+        <h2>Hal sederhana,<br>tapi <em>berarti.</em></h2>
+        <p>Karena pada akhirnya, yang paling aku ingat bukan tempatnya atau harinya. Tapi bagaimana rasanya ketika kita ada di sana bersama.</p>
+        <button class="pill" data-go="#letter">Lanjut ke pesan terakhir →</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen letter" id="letter">
+    <div class="letter-inner reveal">
+      <div class="tiny">A LETTER FOR YOU</div>
+      <div class="big-heart">♥</div>
+      <h2>Untuk <span data-name="partner">Nama Pasangan</span>,<br>terima kasih sudah<br><em>menjadi bagian dari ceritaku.</em></h2>
+      <div class="letter-box">
+        <p data-message="1">Kalau suatu saat kamu membuka halaman ini lagi, aku ingin kamu tahu satu hal: semua yang ada di sini dibuat karena aku menghargai setiap momen yang pernah kita punya.</p>
+        <p data-message="2">Semoga kita selalu punya alasan untuk tersenyum, punya banyak cerita baru, dan kalau nanti melihat kembali halaman ini, kita bisa berkata, “ternyata kita sudah sejauh ini.”</p>
+        <strong data-from>— dari seseorang yang selalu menyimpan kamu di dalam ceritanya ♡</strong>
+      </div>
+      <button class="pill" id="secretBtn">Buka satu pesan lagi 💌</button>
+      <div class="secret" id="secret">Aku sayang kamu. Hari ini, besok, dan di setiap halaman cerita yang belum kita tulis. ❤️</div>
+    </div>
+  </section>
+
+  <footer>made with ♡ for <span data-name="partner">you</span> · <span data-year>2026</span></footer>
+  <audio id="audio" preload="metadata" src="assets/music/lagu.mp3"></audio>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
