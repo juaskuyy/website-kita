@@ -12,7 +12,7 @@ Lagu: assets/music/lagu.mp3
 ====================================================
 */
 const CONFIG = {
-  partnerName: "RAWR",
+  partnerName: "RAWR🫶🏻",
   startDate: "28 AGUSTUS 2025",
   year: "2026",
 
