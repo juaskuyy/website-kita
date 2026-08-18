@@ -55,27 +55,11 @@ footer{position:relative;z-index:1;text-align:center;color:#62586a;font-size:10p
   .story-date{width:50px;height:50px;font-size:20px;box-shadow:0 0 0 5px #150d1b,0 10px 25px #0007}
   .story-date span{font-size:5px}
   .story-content{padding:17px;border-radius:21px}
-
-  /* Match the reference: image and caption sit beside each other on mobile. */
-  .story-grid.single-photo{grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:12px;align-items:center}
-  .story-grid.single-photo .story-photo{min-height:175px}
-  .story-grid.single-photo .chat-photo img{aspect-ratio:3/4;object-fit:contain;padding:5px}
-  .story-copy h3{font-size:27px;line-height:1;margin-bottom:10px}
-  .story-copy p{font-size:10.5px;line-height:1.6;margin-bottom:10px}
-  .story-copy .caption{font-size:9px;line-height:1.35}
-
-  /* Keep all first-meeting photos visible as one compact collage. */
-  .meeting-grid{grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:9px;align-items:stretch}
-  .large-photo img{aspect-ratio:1/1;object-fit:cover}
-  .small-photos{grid-template-columns:1fr;grid-template-rows:1fr 1fr;gap:9px}
-  .small-photos .story-photo img{aspect-ratio:1/1;object-fit:cover}
-  .meeting-caption{padding:14px 2px 2px}
-  .meeting-caption h3{font-size:27px;line-height:1;margin-bottom:10px}
-  .meeting-caption p{font-size:10.5px;line-height:1.6;margin-bottom:10px}
-  .meeting-caption .caption{font-size:9px}
-
-  .date-milestone h3{font-size:33px}
-  .date-milestone p{font-size:12px;line-height:1.75}
+  .story-grid,.story-grid.single-photo,.meeting-grid{grid-template-columns:1fr;gap:16px}
+  .story-copy h3,.meeting-caption h3,.date-milestone h3{font-size:33px}
+  .story-copy p,.meeting-caption p,.date-milestone p{font-size:12px;line-height:1.75}
   .caption{font-size:14px}
   .story-date-only .story-content{min-height:230px;padding:25px}
+  .small-photos{grid-template-columns:1fr 1fr;grid-template-rows:none;gap:10px}
+  .small-photos .story-photo img{aspect-ratio:1/1}
 }
