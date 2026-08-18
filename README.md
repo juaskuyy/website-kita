@@ -1,22 +1,8 @@
-# Website Ucapan — Versi Cerita Kita
+# Website Ucapan — Update V3
 
-Tanggal yang sudah diatur:
-- 28 Agustus 2025 — awal chatan
-- 23 November 2025 — awal jadian
-- 15 Agustus 2026 — hari pertama ketemu
+Perubahan terbaru:
+- 23 November 2025 sekarang memiliki foto menggunakan `assets/foto/ketemu1.jpg`.
+- Caption 23 November disesuaikan dengan desain referensi.
+- 15 Agustus 2026 tetap menggunakan 3 foto (`ketemu1.jpg`, `ketemu2.jpg`, `ketemu3.jpg`) tanpa perubahan.
 
-## Foto yang perlu dimasukkan
-Taruh foto di folder `assets/foto/` dengan nama berikut:
-
-1. `chat-28-agustus.jpg` — screenshot/chat 28 Agustus 2025 untuk bagian awal chat.
-2. `ketemu1.jpg` — foto kalian saat pertama ketemu.
-3. `ketemu2.jpg` — foto kalian saat pertama ketemu.
-4. `ketemu3.jpg` — foto kalian saat pertama ketemu.
-
-Kalau punya lebih dari 3 foto 15 Agustus, bisa tambahkan lagi dengan menyalin pola elemen foto di `index.html`.
-
-## Musik
-Masukkan lagu ke `assets/music/lagu.mp3`.
-
-## Nama pasangan
-Edit `partnerName` di `config.js`.
+Upload/update `index.html` dan `style.css` di repository GitHub yang sudah ada. Pastikan folder `assets/foto/` lama tetap dipertahankan karena berisi foto-foto website.
