@@ -42,11 +42,11 @@ footer{position:relative;z-index:1;text-align:center;color:#62586a;font-size:10p
 .story-date-only .story-content{min-height:230px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding-left:40px}
 .heart-marker{color:var(--pink);font-size:25px;text-shadow:0 0 25px #ff52bb88;margin-bottom:10px}
 .date-milestone{background:radial-gradient(circle at 80% 50%,#ff65c522,transparent 40%),linear-gradient(145deg,#ffffff0d,#ffffff05)!important}
-.meeting-grid{grid-template-columns:1.25fr .75fr;align-items:stretch}
+.meeting-layout{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(260px,.75fr);gap:28px;align-items:center}.meeting-grid{grid-template-columns:1.25fr .75fr;align-items:stretch}
 .large-photo img{aspect-ratio:1/1;object-fit:cover}
 .small-photos{display:grid;grid-template-rows:1fr 1fr;gap:14px}
 .small-photos .story-photo img{aspect-ratio:4/3}
-.meeting-caption{padding:22px 5px 3px}
+.meeting-caption{padding:5px 5px 3px}
 .meeting-caption h3{font-size:38px}
 @media(max-width:700px){
   .memories-section{padding-left:4%;padding-right:4%}
@@ -64,14 +64,15 @@ footer{position:relative;z-index:1;text-align:center;color:#62586a;font-size:10p
   .story-copy p{font-size:10.5px;line-height:1.6;margin-bottom:10px}
   .story-copy .caption{font-size:9px;line-height:1.35}
 
-  /* Keep all first-meeting photos visible as one compact collage. */
-  .meeting-grid{grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:9px;align-items:stretch}
+  /* First meeting: 3-photo collage on the left, caption on the right, like the reference. */
+  .meeting-layout{grid-template-columns:minmax(0,1.18fr) minmax(0,.82fr);gap:12px;align-items:center}
+  .meeting-grid{grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:8px;align-items:stretch}
   .large-photo img{aspect-ratio:1/1;object-fit:cover}
-  .small-photos{grid-template-columns:1fr;grid-template-rows:1fr 1fr;gap:9px}
+  .small-photos{grid-template-columns:1fr;grid-template-rows:1fr 1fr;gap:8px}
   .small-photos .story-photo img{aspect-ratio:1/1;object-fit:cover}
-  .meeting-caption{padding:14px 2px 2px}
-  .meeting-caption h3{font-size:27px;line-height:1;margin-bottom:10px}
-  .meeting-caption p{font-size:10.5px;line-height:1.6;margin-bottom:10px}
+  .meeting-caption{padding:0}
+  .meeting-caption h3{font-size:25px;line-height:1;margin-bottom:9px}
+  .meeting-caption p{font-size:10px;line-height:1.55;margin-bottom:9px}
   .meeting-caption .caption{font-size:9px}
 
   .date-milestone h3{font-size:33px}
