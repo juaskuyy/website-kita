@@ -17,8 +17,8 @@ const CONFIG = {
   year: "2026",
 
   song: {
-    title: "perfect",
-    artist: "Ed Sheeran"
+    title: "A Thousand Years",
+    artist: "Christina Perri"
   },
 
   events: [
